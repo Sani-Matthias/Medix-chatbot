@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medix App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Seiteninhalte -->
+        <div id="home" class="page active">
+            <h1>Willkommen bei Medix</h1>
+            <p>Wählen Sie eine Funktion unten aus.</p>
+        </div>
+        <div id="chat" class="page">
+            <h1>Chat</h1>
+            <div id="chat-window">
+                <div id="messages"></div>
+            </div>
+            <div id="chat-input">
+                <input type="text" id="user-input" placeholder="Schreibe eine Nachricht..." />
+                <button onclick="sendMessage()">Senden</button>
+            </div>
+            <div id="chat-controls">
+                <button onclick="saveChat()">Chat speichern</button>
+                <button onclick="clearChat()">Chat löschen</button>
+            </div>
+            
+        </div>
+        
+        <div id="settings" class="page">
+            <h1>Einstellungen</h1>
+            <p>Passen Sie Ihre App an.</p>
+        </div>
+
+        <!-- Bottom Navigator -->
+        <nav class="bottom-nav">
+            <button onclick="switchPage('home')">Home</button>
+            <button onclick="switchPage('chat')">Chat</button>
+            <button onclick="switchPage('settings')">Einstellungen</button>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
