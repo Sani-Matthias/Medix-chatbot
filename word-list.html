@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medix - Wortschatz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="word-list" class="page active">
+            <h1>Wortschatz</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Wort</th>
+                        <th>Antwort</th>
+                        <th>Aktionen</th>
+                    </tr>
+                </thead>
+                <tbody id="word-list-items"></tbody>
+            </table>
+            <div id="word-list-controls">
+                <input type="text" id="new-word" placeholder="Neues Wort..." />
+                <input type="text" id="new-response" placeholder="Antwort..." />
+                <button onclick="addWord()">Hinzufügen</button>
+            </div>
+        </div>
+        <nav class="bottom-nav">
+            <a href="home.html">Home</a>
+            <a href="chat.html">Chats</a>
+            <a href="word-list.html">Wortschatz</a>
+            <a href="settings.html">Einstellungen</a>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

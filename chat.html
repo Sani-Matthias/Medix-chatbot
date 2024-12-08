@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="chat-list">
+        <button onclick="addNewChat()">+ Neuer Chat</button>
+        <ul id="chat-list-items"></ul>
+    </div>
+    <div id="chat-window" style="display: none;">
+        <div class="chat-header">
+            <span id="current-chat-title"></span>
+            <button onclick="returnToChatList()">Zurück</button>
+        </div>
+        <div id="messages"></div>
+        <div id="chat-input">
+            <input type="text" id="user-input" placeholder="Schreibe eine Nachricht..." onkeydown="if(event.key === 'Enter') sendMessage()" />
+            <button onclick="sendMessage()">Senden</button>
+        </div>
+        
+    </div>
+    
+    
+    
+
+    <nav class="bottom-nav">
+        <a href="home.html">Home</a>
+        <a href="chat.html">Chats</a>
+        <a href="word-list.html">Wortschatz</a>
+        <a href="settings.html">Einstellungen</a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
